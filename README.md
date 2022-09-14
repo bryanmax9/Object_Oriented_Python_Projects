@@ -265,21 +265,37 @@ correct answer.  After all 10 questions are finished, display the total points t
  
 Partial Example Output (user input is in italics): 
  
-- State Capitals Quiz – 
+-  State Capitals Quiz  – 
+
 1. The capital of New Mexico is: 
+
  A. Phoenix   B. Lansing   C. Santa Fe   D. Cheyenne 
+
+
 Enter selection: G 
+
 Invalid input. Input choice A-D. 
+
 Enter selection: B 
+
 Incorrect!  The correct answer is: Santa Fe. 
+
 2. The capital of Florida is: 
+
  A. Tallahassee   B. Dover   C. Honolulu   D. Sacramento 
+
 Enter selection: A 
-©2022 Cleary 
+ 
 Correct! 
+
 ... 
+
 10. The capital of California is: 
- A. Hartford   B. Sacramento   C. Montgomery   D. Juneau 
+
+A. Hartford   B. Sacramento   C. Montgomery   D. Juneau 
+
 Enter selection: B 
+
 Correct! 
+
 End of test.  You got 8 correct.
