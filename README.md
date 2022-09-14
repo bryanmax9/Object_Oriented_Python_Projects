@@ -228,3 +228,58 @@ X 3 X X 3 3 4 X
 
 0 0 0 0 0 1 1 1
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Lab 4 – File IO  
+State Capitals Quiz 
+ 
+Create a program that quizzes the user on the state capitals.  Use the file (StateCapitals.txt) 
+provided on Canvas to create the quiz questions. 
+ 
+Create the following functions: 
+1. read_file_to_dict(file_name) – each line in the file is in the format: 
+state,capital.  Read in each line, break up the state from the capital, and store them 
+as a key:value pair in a dictionary.  Return the filled dictionary. 
+2. get_random_state(states) – pass in the states dictionary.  Convert the 
+dictionary to a list of key:value pairs, then choose a random key:value pair from the list 
+and return it.  This returned value will be used as the correct state:capital pair for each 
+question. 
+3. get_random_choices(states, correct_capital) – pass in the states 
+dictionary, and the capital of the correct answer.  Convert the dictionary to a list of values 
+and choose 3 incorrect choices from this list.  These incorrect choices should be different 
+from the correct capital and also different from each other.  Place the three incorrect 
+capitals and the correct capital in a list.  Shuffle and then return the list. 
+4. ask_question(correct_state, possible_answers) – pass in the name of 
+the correct state and the list of 4 possible answers.  Display the question to the user and 
+the four possible answers.  Take in the user’s selection and check that it is an A, B, C, or 
+D.  If it isn’t, then display an ‘Invalid’ message and repeat until the user enters a valid 
+choice.  If it is, then convert the input to 0-3 (A=0, B=1, C=2, D=3) and return the value. 
+ 
+Your main should read in the file then have a loop that repeats 10 times, one for each of the quiz 
+questions.  For each quiz question, choose a random state (repeats are allowed) as the correct 
+answer, generate the possible answers, get the correct choice by searching the possible answer 
+list for the correct capital, and then ask the quiz question.  Compare the user’s selection (0-3) 
+against the location of the correct capital (0-3).  If the user was correct, display a congratulatory 
+message and give them a point, otherwise, tell them that they were incorrect and display the 
+correct answer.  After all 10 questions are finished, display the total points they received.   
+ 
+Partial Example Output (user input is in italics): 
+ 
+- State Capitals Quiz – 
+1. The capital of New Mexico is: 
+ A. Phoenix   B. Lansing   C. Santa Fe   D. Cheyenne 
+Enter selection: G 
+Invalid input. Input choice A-D. 
+Enter selection: B 
+Incorrect!  The correct answer is: Santa Fe. 
+2. The capital of Florida is: 
+ A. Tallahassee   B. Dover   C. Honolulu   D. Sacramento 
+Enter selection: A 
+©2022 Cleary 
+Correct! 
+... 
+10. The capital of California is: 
+ A. Hartford   B. Sacramento   C. Montgomery   D. Juneau 
+Enter selection: B 
+Correct! 
+End of test.  You got 8 correct.
