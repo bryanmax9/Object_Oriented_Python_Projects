@@ -437,3 +437,5 @@ should check the top and left edges of the rectangle, and down and right should
 check the bottom and right edges of the rectangle (which means you’ll have to
 account for the width and height of the rectangle).
 
+....... <h1>The continuing Labs, they contain a pdf with the detailed information</h1>
+
